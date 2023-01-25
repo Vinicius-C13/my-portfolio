@@ -15,7 +15,7 @@ export default function Item(props) {
 
     return (
         <div>
-            <img src={image} alt='project'/>
+            <img src={image} alt={props.img}/>
             <h4 style={nameStyle}>{props.project || 'Nome do Projeto'}</h4>
             <div style={techStyle}>{props.tech || 'Tecnologias usadas'}</div>
         </div>
