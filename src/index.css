@@ -17,31 +17,48 @@ p {
     color: white;
 }
 
-#first-section > header {
-    display: flex;
-    align-items: center;
-    padding-block: 20px;
-    padding-inline: 2vw;
+.section-container {
+    display: grid;
+    grid-template-columns: 10vw 80vw 10vw;
+    padding-top: 30px;
 }
 
-#first-section > header > span {
+.section-container > :first-child {
+    grid-column: 2 / 3;
+}
+
+header + img {
+    margin-inline: auto;
+}
+
+header {
+    display: flex;
+    align-items: center;
+}
+
+header > .logo {
+    font-size: 32px;
+    font-weight: bold;
     margin-right: auto;
 }
 
 .photo-container {
-    width: 30vw;
+    width: 28vw;
+    min-height: 90vh;
     background: #242424;
     display: flex;
     flex-direction: column;
     justify-content: space-between;
     position: absolute;
     top: 0px;
-    right: 8vw;
+    right: 10vw;
 }
 
 .photo {
     display: block;
     max-width: 100%;
+    position: relative;
+    z-index: 5;
 }
 
 .icons-container {
@@ -50,15 +67,44 @@ p {
     margin: 0px;
     justify-content: right;
     gap: 12px;
-    padding-top: 20px;
+    padding-top: 30px;
     padding-inline: 12px;
 }
 
-.text-container {
-    position: relative;
-    z-index: 2;
+.ellipse {
+    position: absolute;
+    bottom: 40px;
+    transform: translateX(50%);
+    left: -50%;
 }
 
-.text-container > h1{
-    font-size: 76px;
+/*First Section*/
+#first-section {
+    max-width: 75%;
+    min-height: 60vh;
+    position: relative;
+    z-index: 2;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    grid-column: 2 / 3;
+}
+
+#first-section > h1{
+    font-size: 72px;
+    margin-bottom: 20px;
+}
+
+#first-section > h1 > span {
+    text-decoration: underline;
+    text-decoration-color: #4AD295;
+}
+
+#first-section > p {
+    font-size: 22px;
+    max-width: 60%;
+}
+
+#rings {
+    grid-column: 1;
 }
