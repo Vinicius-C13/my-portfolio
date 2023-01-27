@@ -6,15 +6,21 @@ export default function Button(props) {
 
     const style = {
         backgroundColor: 'transparent',
-        borderBottom: '4px solid #4AD295',
+        borderBottom: '3px solid #4AD295',
         borderInline: 'none',
         borderTop: 'none',
-        padding: ' 3px 0',
-        textTransform: 'uppercase' 
+        padding: '0 0 10px 0',
+        textTransform: 'uppercase',
+        width: 'fit-content',
+        height: 'fit-content',
+        color: 'white',
+        fontSize: '14px',
+        letterSpacing: '2px'
+
     }
 
     return (
-        <button style={style}>{props.content || 'Clique'}</button>
+        <button style={style}>Entre em contato</button>
     )
 
 }   

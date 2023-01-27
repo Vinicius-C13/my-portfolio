@@ -1,10 +1,11 @@
 import { render, screen } from '@testing-library/react';
 import App from './App';
+import Projects from './components/Projects';
 
- it.skip('should render the title', () => {
-    const { getByText } = render(<App />)
+it('should render the component', () => {
+    const { getByAltText } = render(<Projects />)
 
-    const title = getByText('Titulo')
+    const title = getByAltText('easybank landing page project')
 
     expect(title).toBeInTheDocument
-}) 
+})

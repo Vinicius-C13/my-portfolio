@@ -2,8 +2,8 @@ import React from 'react';
 
 export default function Item(props) {
 
-    const techStyle = {
-        fontSize: '40px'
+    const nameStyle = {
+        fontSize: '32px'
     }
 
     const descStyle = {
@@ -12,7 +12,7 @@ export default function Item(props) {
 
     return (
         <div>
-            <h3 style={techStyle}>{props.tech}</h3>
+            <h3 style={nameStyle}>{props.name}</h3>
             <div style={descStyle}>{props.desc}</div>
         </div>
     )

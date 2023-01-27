@@ -3,6 +3,7 @@ import React from 'react';
 export default function Item(props) {
     
     const nameStyle = {
+        fontSize: '18px',
         textTransform: 'uppercase'
 }
 
@@ -14,9 +15,9 @@ export default function Item(props) {
     const image = require('../../assets/'+props.img);
 
     return (
-        <div>
-            <img src={image} alt={props.img}/>
-            <h4 style={nameStyle}>{props.project || 'Nome do Projeto'}</h4>
+        <div className='project-item'>
+            <img src={image} alt={props.alt}/>
+            <h4 style={nameStyle}>{props.title || 'Nome do Projeto'}</h4>
             <div style={techStyle}>{props.tech || 'Tecnologias usadas'}</div>
         </div>
     )
