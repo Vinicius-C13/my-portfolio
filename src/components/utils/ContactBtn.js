@@ -20,7 +20,7 @@ export default function Button(props) {
     }
 
     return (
-        <button style={style}>Entre em contato</button>
+        <button style={style}>{props.content || 'Entre em contato'}</button>
     )
 
 }   

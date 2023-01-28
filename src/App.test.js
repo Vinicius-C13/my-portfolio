@@ -1,11 +1,10 @@
 import { render, screen } from '@testing-library/react';
-import App from './App';
-import Projects from './components/Projects';
+import Contact from './components/Contact';
 
 it('should render the component', () => {
-    const { getByAltText } = render(<Projects />)
+    const { getByText } = render(<Contact />)
 
-    const title = getByAltText('easybank landing page project')
+    const button = getByText('Enviar')
 
-    expect(title).toBeInTheDocument
+    expect(button).toBeInTheDocument
 })

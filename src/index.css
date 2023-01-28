@@ -21,6 +21,10 @@ p {
 
 img {max-width: 100%;}
 
+h2 {
+    font-size: 60px;
+}
+
 /*component classes*/
 
 .section-container {
@@ -142,7 +146,7 @@ header {
 }
 
 /*Second section*/
-.abilities {margin-bottom: 130px}
+.abilities {margin-bottom: 6rem}
 
 .abilities > .items-container {
     grid-template-columns: 1fr 1fr 1fr;
@@ -164,15 +168,11 @@ header {
 .section-container.projects {
     grid-template-rows: auto;
     row-gap: 40px;
-    margin-bottom: 130px;
+    margin-bottom: 6rem;
 }
 
 .section-container.projects>* {
     grid-column: 2 /3;
-}
-
-.projects h2 {
-    font-size: 60px;
 }
 
 .project-item>img {
@@ -185,4 +185,81 @@ header {
 }
 
 /*Fourth section*/
+
+.about-me {
+    margin-bottom: 6rem;
+}
+
+.about-me p {
+    margin-block: 10px;
+    font-size: 13px;
+    color: black;
+}
+
+.about-me .text-container {
+    padding: 30px;
+    background-color: #4AD295;
+}
+
+.about-me span {
+    display: block;
+    width: max(6%, 40px);
+    aspect-ratio: 1.1/1;
+    clip-path: polygon(50% 0%, 0% 100%, 100% 100%);
+    background-color: #4AD295;
+    margin-left: 40px;
+    margin-bottom: -3px;
+}
+
+/*fifth section*/
+
+.contact {
+    padding-block: 6rem;
+    background-color: #242424;
+}
+
+.contact > div {
+    display: grid;
+    grid-template-columns: 50% 30%;
+    grid-template-rows: 2fr 3fr;
+    column-gap: 20%;
+}
+
+.contact > div > p {
+    grid-column: 1;
+}
+
+.contact > div > form {
+    display: flex;
+    flex-direction: column;
+    gap: 20px;
+    grid-column: 2;
+    grid-row: 1/3;
+}
+
+.contact > div > form > button {
+    margin-left: auto;
+}
+
+input, textarea {
+    border: none;
+    outline: none;
+    color: #FFFFFF;
+    border-bottom: 2px solid #FFFFFF;
+    background-color: transparent;
+}
+
+textarea {
+    height: 100px;
+    resize: none;
+}
+
+input:focus-visible {
+    outline: none;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #CACACA;
+    font-weight: bold;
+}
 
