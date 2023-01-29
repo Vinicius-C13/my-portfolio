@@ -20,7 +20,7 @@ export default function Section() {
                     <ContactBtn />
                 </div>
             </div>
-            <hr className='section-devider'/>
+            <hr className='section-divider'/>
         </>
     )
 }

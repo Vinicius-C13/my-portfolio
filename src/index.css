@@ -36,7 +36,7 @@ h2 {
     grid-column: 2 / 3;
 }
 
-.section-devider {
+.section-divider {
     width: 80%;
     margin-block: 90px;
 }
@@ -64,8 +64,8 @@ header {
     align-items: center;
 }
 
-.header > .logo {
-    font-size: 32px;
+.logo {
+    font-size: 28px;
     font-weight: bold;
     margin-right: auto;
 }
@@ -149,12 +149,13 @@ header {
 .abilities {margin-bottom: 6rem}
 
 .abilities > .items-container {
-    grid-template-columns: 1fr 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
+    justify-content: center;
 }
 
 /*Third section*/
 .projects > .items-container {
-    grid-template-columns: 1fr 1fr;
+    grid-template-columns: repeat(auto-fill, minmax(300px, 1fr));
     row-gap: 40px;
     column-gap: 25px;
 }
@@ -214,7 +215,7 @@ header {
 /*fifth section*/
 
 .contact {
-    padding-block: 6rem;
+    padding-block: 6rem 3rem;
     background-color: #242424;
 }
 
@@ -261,5 +262,20 @@ input:focus-visible {
 input::placeholder, textarea::placeholder {
     color: #CACACA;
     font-weight: bold;
+}
+
+/*Footer*/
+.footer{
+    background-color: #242424;
+}
+
+.footer > div > div {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.footer .icons-container {
+    padding-inline: 0;
 }
 

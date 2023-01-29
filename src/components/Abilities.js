@@ -17,12 +17,12 @@ export default function Abilities() {
             desc: 'Nível avançado'
         },
         {
-            name: 'Acessibilidade',
-            desc: 'Nível básico'
-        },
-        {
             name: 'React',
             desc: 'Nível intermediário'
+        },
+        {
+            name: 'Acessibilidade',
+            desc: 'Nível básico'
         }
     ]
 
