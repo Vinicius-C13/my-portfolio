@@ -1,6 +1,5 @@
 import React from 'react';
-import linkedinIcon from '../assets/linkedin.svg';
-import githubIcon from '../assets/github.svg';
+import SocialsBtn from './utils/SocialsBtn';
 import navButton from '../assets/nav-button.svg';
 import ellipse from '../assets/ellipse.svg';
 
@@ -11,8 +10,8 @@ export default function Header() {
                 <span className='logo'>vinícius costa</span>
                 <div className='photo-container'>
                     <ul className='icons-container'>
-                        <li><img src={linkedinIcon} alt='linkedin'/></li>
-                        <li><img src={githubIcon} alt='github'/></li>
+                        <li><SocialsBtn social='linkedin'/></li>
+                        <li><SocialsBtn social='github'/></li>
                     </ul>
                     <div>
                         <img id='ellipse' src={ellipse} alt='ellipse'/>

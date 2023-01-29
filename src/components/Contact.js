@@ -1,9 +1,9 @@
 import React from 'react';
-import ContactBtn from './utils/ContactBtn';
+import FormBtn from './utils/FormBtn';
 
 export default function Contact() {
     return (
-        <div className='section-container contact'>
+        <div className='section-container contact' id='contact'>
             <div>
                 <h2>Contato</h2>
                 <p>
@@ -14,7 +14,7 @@ export default function Contact() {
                     <input placeholder='NOME'/>
                     <input placeholder='EMAIL'/>
                     <textarea placeholder='MENSAGEM'></textarea>
-                    <ContactBtn content='Enviar'/>
+                    <FormBtn />
                 </form>
             </div>
         </div>

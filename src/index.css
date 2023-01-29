@@ -25,6 +25,15 @@ h2 {
     font-size: 60px;
 }
 
+html {
+    scroll-behavior: smooth;
+}
+
+a:hover, button:hover {
+    cursor: pointer;
+}
+
+
 /*component classes*/
 
 .section-container {
@@ -277,5 +286,26 @@ input::placeholder, textarea::placeholder {
 
 .footer .icons-container {
     padding-inline: 0;
+}
+
+/*Tests*/
+.project-item {
+    position: relative;
+}
+
+.overlay:hover {
+    opacity: 1;
+}
+
+.overlay {
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+    position: absolute;
+    opacity: 0;
+    top: 0;
+    width: 100%;
+    aspect-ratio: 547/415;
+    background-color: rgba(0, 0, 0, .8);
 }
 

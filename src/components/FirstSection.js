@@ -1,6 +1,6 @@
 import React from 'react';
 import rings from '../assets/rings.svg';
-import ContactBtn from './utils/ContactBtn'
+import ContactBtn from './utils/TextBtn'
 
 export default function Section() {
 
@@ -17,7 +17,7 @@ export default function Section() {
                         De SBC - SP, sou um desenvolvedor web front-end apaixonado por construir
                         aplicações bonitas e responsivas.
                     </p>
-                    <ContactBtn />
+                    <ContactBtn link='#contact'/>
                 </div>
             </div>
             <hr className='section-divider'/>

@@ -1,7 +1,5 @@
 import React from 'react';
 
-
-
 export default function Button(props) {
 
     const style = {
@@ -16,11 +14,10 @@ export default function Button(props) {
         color: 'white',
         fontSize: '14px',
         letterSpacing: '2px'
-
     }
 
     return (
-        <button style={style}>{props.content || 'Entre em contato'}</button>
+        <button onClick={props.handleClick} style={style}>Enviar</button>
     )
 
 }   

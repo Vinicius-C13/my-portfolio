@@ -1,4 +1,5 @@
 import React from 'react';
+import Button from './TextBtn';
 
 export default function Item(props) {
     
@@ -19,6 +20,10 @@ export default function Item(props) {
             <img src={image} alt={props.alt}/>
             <h4 style={nameStyle}>{props.title || 'Nome do Projeto'}</h4>
             <div style={techStyle}>{props.tech || 'Tecnologias usadas'}</div>
+            <div className='overlay'>
+                <Button link={props.site} text='VER PROJETO'/>
+                <Button link={props.repos} text='VER CÓDIGO'/>
+            </div>
         </div>
     )
 }

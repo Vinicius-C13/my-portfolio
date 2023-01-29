@@ -1,6 +1,5 @@
 import React from 'react';
-import linkedinIcon from '../assets/linkedin.svg';
-import githubIcon from '../assets/github.svg';
+import SocialsBtn from './utils/SocialsBtn'
 
 export default function Footer() {
     return(
@@ -10,8 +9,8 @@ export default function Footer() {
                 <div>
                     <span className='logo'>vinícius costa</span>
                     <ul className='icons-container'>
-                        <li><img src={linkedinIcon} alt='linkedin'/></li>
-                        <li><img src={githubIcon} alt='github'/></li>
+                        <li><SocialsBtn social='linkedin'/></li>
+                        <li><SocialsBtn social='github'/></li>
                     </ul>
                 </div>
             </div>
