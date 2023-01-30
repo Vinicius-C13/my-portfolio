@@ -3,7 +3,7 @@ import SocialsBtn from './utils/SocialsBtn'
 
 export default function Footer() {
     return(
-        <div className='section-container footer'>
+        <footer className='section-container footer'>
             <div>
                 <hr/>
                 <div>
@@ -14,6 +14,6 @@ export default function Footer() {
                     </ul>
                 </div>
             </div>
-        </div>
+        </footer>
     )
 }
