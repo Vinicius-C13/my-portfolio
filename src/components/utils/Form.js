@@ -1,5 +1,5 @@
 import React from 'react';
-import emailJs from 'emailjs-com'
+import emailJs from '@emailjs/browser';
 import FormBtn from './FormBtn';
 
 export default function Form() {
