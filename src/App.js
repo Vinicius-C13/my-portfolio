@@ -6,6 +6,7 @@ import Projects from './components/Projects';
 import AboutMe from './components/AboutMe';
 import Contact from './components/Contact';
 import Footer from './components/Footer';
+import Divider from './components/utils/Divider';
 
 function App() {
   return (
@@ -13,7 +14,9 @@ function App() {
       <Header />
       <FirstSection />
       <Abilities />
+      <Divider />
       <Projects />
+      <Divider />
       <AboutMe />
       <Contact />
       <Footer />

@@ -11,9 +11,9 @@ export default function Contact() {
                     Por favor, preencha o formulário e eu te responderei o mais rápido possível.
                 </p>
                 <form>
-                    <input placeholder='NOME'/>
-                    <input placeholder='EMAIL'/>
-                    <textarea placeholder='MENSAGEM'></textarea>
+                    <input placeholder='NOME' type='text' required/>
+                    <input placeholder='EMAIL' type='email' required/>
+                    <textarea placeholder='MENSAGEM' required></textarea>
                     <FormBtn />
                 </form>
             </div>

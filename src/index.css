@@ -22,7 +22,7 @@ p {
 img {max-width: 100%;}
 
 h2 {
-    font-size: 60px;
+    font-size: max(4vw, 40px);
 }
 
 html {
@@ -31,6 +31,16 @@ html {
 
 a:hover, button:hover {
     cursor: pointer;
+}
+
+.section-divider {
+    opacity: 0;
+    margin-block: 40px;
+}
+
+.section-divider.all-time {
+    opacity: 1;
+    margin-block: 70px;
 }
 
 
@@ -46,8 +56,8 @@ a:hover, button:hover {
 }
 
 .section-divider {
-    width: 80%;
-    margin-block: 90px;
+    width: 100%;
+    margin-block: 40px;
 }
 
 .items-container {
@@ -127,6 +137,7 @@ header {
     flex-direction: column;
     justify-content: center;
     grid-column: 2 / 3;
+    z-index: 20;
 }
 
 #first-section > *:not(:last-child){
@@ -134,7 +145,7 @@ header {
 }
 
 #first-section > h1{
-    font-size: max(5vw, 44px);
+    font-size: clamp(44px, 5.5vw, 68px);
 }
 
 #first-section > h1 > span {
@@ -155,7 +166,6 @@ header {
 }
 
 /*Second section*/
-.abilities {margin-bottom: 6rem}
 
 .abilities > .items-container {
     grid-template-columns: repeat(auto-fill, minmax(270px, 1fr));
@@ -170,15 +180,21 @@ header {
 }
 
 .projects > :first-child {
-    display: flex;
+    display: grid;
+    grid-template-columns: 60% 30%;
     justify-content: space-between;
     align-items: center;
+    gap: 10px;
+}
+
+.projects > :first-child > a {
+    width: fit-content;
+    justify-self: flex-end;
 }
 
 .section-container.projects {
     grid-template-rows: auto;
     row-gap: 40px;
-    margin-bottom: 6rem;
 }
 
 .section-container.projects>* {
@@ -242,7 +258,7 @@ header {
 .contact > div > form {
     display: flex;
     flex-direction: column;
-    gap: 20px;
+    gap: 40px;
     grid-column: 2;
     grid-row: 1/3;
 }
@@ -255,7 +271,7 @@ input, textarea {
     border: none;
     outline: none;
     color: #FFFFFF;
-    border-bottom: 2px solid #FFFFFF;
+    border-bottom: 2px solid rgba(255, 255, 255, .3);
     background-color: transparent;
 }
 
@@ -264,8 +280,13 @@ textarea {
     resize: none;
 }
 
-input:focus-visible {
+input:focus-visible, textarea:focus-visible {
+    border-color: #FFFFFF;
     outline: none;
+}
+
+input:invalid, textarea:invalid {
+    border-color: rgb(255, 96, 96);
 }
 
 input::placeholder, textarea::placeholder {
@@ -309,3 +330,63 @@ input::placeholder, textarea::placeholder {
     background-color: rgba(0, 0, 0, .8);
 }
 
+@media(max-width: 45rem) {
+
+        .section-container > .header {
+            grid-column: 2/4;
+        }
+
+        /*first-section*/
+        #first-section {
+            max-width: 85%;
+        }
+
+        #first-section > h1 {
+            font-size: clamp(44px, 10vw, 54px);
+        }
+
+        .photo-container {
+            width: 40vw;
+            right: 0;
+        }
+
+        /*forth section*/
+        .contact > div {
+            grid-template-columns: 1fr;
+            grid-auto-rows: auto;
+            column-gap: unset;
+            row-gap: 30px;
+        }
+        .contact > div > h2 {text-align: center;}
+    
+        .contact > div > p {
+            grid-column: unset;
+            text-align: center;
+        }
+        
+        .contact > div > form {
+            grid-column: unset;
+            grid-row: unset;
+        }
+}
+
+@media(max-width: 35rem) {
+    .section-container {
+        display: grid;
+        grid-template-columns: 5% 90% 5%;
+    }
+
+    .section-divider {
+        opacity: 1;
+        margin-block: 70px;
+    }
+
+    /*first section*/
+
+    /*second section*/
+    .abilities > div > * {
+        text-align: center;
+    }
+
+    /*third section*/
+}

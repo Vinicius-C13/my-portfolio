@@ -1,6 +1,7 @@
 import React from 'react';
 import rings from '../assets/rings.svg';
-import ContactBtn from './utils/TextBtn'
+import ContactBtn from './utils/TextBtn';
+import Divider from './utils/Divider';
 
 export default function Section() {
 
@@ -20,7 +21,7 @@ export default function Section() {
                     <ContactBtn link='#contact'/>
                 </div>
             </div>
-            <hr className='section-divider'/>
+            <Divider class='all-time'/>
         </>
     )
 }

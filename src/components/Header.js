@@ -1,7 +1,7 @@
 import React from 'react';
 import SocialsBtn from './utils/SocialsBtn';
-import navButton from '../assets/nav-button.svg';
 import ellipse from '../assets/ellipse.svg';
+//import navButton from '../assets/nav-button.svg';
 
 export default function Header() {
     return (
@@ -19,7 +19,6 @@ export default function Header() {
                     </div>
                 </div>
             </div>
-            <img src={navButton} alt='nav button' />
         </header>
     )
 }

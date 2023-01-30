@@ -14,7 +14,7 @@ export default function Button(props) {
         width: 'fit-content',
         height: 'fit-content',
         color: 'white',
-        fontSize: '14px',
+        fontSize: 'clamp(12px,1.5vw, 14px)',
         letterSpacing: '2px'
     }
 
