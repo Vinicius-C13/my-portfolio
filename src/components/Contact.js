@@ -1,5 +1,5 @@
 import React from 'react';
-import FormBtn from './utils/FormBtn';
+import Form from './utils/Form';
 
 export default function Contact() {
     return (
@@ -10,12 +10,7 @@ export default function Contact() {
                     Eu adorario  ouvir sobre como eu posso te ajudar.
                     Por favor, preencha o formulário e eu te responderei o mais rápido possível.
                 </p>
-                <form>
-                    <input placeholder='NOME' type='text' required/>
-                    <input placeholder='EMAIL' type='email' required/>
-                    <textarea placeholder='MENSAGEM' required></textarea>
-                    <FormBtn />
-                </form>
+                <Form />
             </div>
         </div>
     )
